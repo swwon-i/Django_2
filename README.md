@@ -29,5 +29,5 @@ python manage.py createsuperuser
 python manage.py runserver
 
 # 9단계 -> 관리자 화면에서 데이터 입력
-# localhost:8000/admin
+localhost:8000/admin
 ```
