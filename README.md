@@ -10,7 +10,7 @@ django-admin.exe startproject myproject .
 python.exe ./manage.py startapp myapp
 
 # 3단계 -> 애플리케이션 등록
-settings.py의 INSTALLED_APPS에 'myapp' 추가
+myproject/settings.py의 INSTALLED_APPS에 'myapp' 추가
 
 # 4단계 -> 모델 정의
 myapp/models.py 에 테이블 생성
@@ -30,4 +30,13 @@ python manage.py runserver
 
 # 9단계 -> 관리자 화면에서 데이터 입력
 localhost:8000/admin
+
+# 10단계 -> 데이터 조회
+myapp/views.py에 조회 회면 생성
+
+# 11단계 -> URL 설정
+myapp/urls.py에 경로 추가
+
+# 12단계 -> 템플릿 생성
+template/myapp/{post_list}.html 생성
 ```
